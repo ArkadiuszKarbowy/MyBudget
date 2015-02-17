@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="4dp" >
+
+    <TextView
+        android:id="@+id/sby_year"
+        style="@style/SbyTitle"
+        android:layout_gravity="center"
+        android:text="2020"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/in_column"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/SbyTitle"
+                android:text="@string/income" />
+
+            <TextView
+                style="@style/Caption"
+                android:text="@string/avg" />
+
+            <TextView
+                android:id="@+id/sby_in"
+                style="@style/SbyInput"
+                android:text="235,14 zł" />
+
+            <TextView
+                android:id="@+id/sby_avgIn"
+                style="@style/Caption"
+                android:text="35,14 zł"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/out_column"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/SbyTitle"
+                android:text="@string/outcome" />
+
+            <TextView
+                style="@style/Caption"
+                android:text="@string/avg" />
+
+            <TextView
+                android:id="@+id/sby_out"
+                style="@style/SbyInput"
+                android:text="235,14 zł" />
+
+            <TextView
+                android:id="@+id/sby_avgOut"
+                style="@style/Caption"
+                android:text="35,14 zł"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/saved_column"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/SbyTitle"
+                android:text="@string/savings" />
+
+            <TextView
+                style="@style/Caption"
+                android:text="@string/avg" />
+
+            <TextView
+                android:id="@+id/sby_saved"
+                style="@style/SbyInput"
+                android:text="1235,14 zł" />
+
+            <TextView
+                android:id="@+id/sby_avgSaved"
+                style="@style/Caption"
+                android:text="125,14 zł"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

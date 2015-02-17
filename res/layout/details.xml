@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mybudget.Details$PlaceholderFragment" >
+
+    <include
+        android:id="@+id/d_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/details_summary" >
+
+    </include>
+
+    <View
+        android:id="@+id/details_separator"
+        style="@style/DetailsSeparator"
+        android:layout_below="@+id/d_sum" />
+
+    <FrameLayout
+        android:id="@+id/details_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/details_separator"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp" >
+    </FrameLayout>
+
+</RelativeLayout>

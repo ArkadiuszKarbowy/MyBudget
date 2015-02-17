@@ -1,0 +1,191 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Headline">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dip</item>
+        <item name="android:layout_marginTop">15dip</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="Headline2">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dip</item>
+        <item name="android:layout_marginTop">1dip</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/light_headline</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Underline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">#55CCCCCC</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">4dip</item>
+        <item name="android:layout_marginRight">4dip</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="infoUnderline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dip</item>
+        <item name="android:background">@color/category</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="DetailsSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dip</item>
+        <item name="android:background">@color/header</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="Caption">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center|center_horizontal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/caption</item>
+    </style>
+
+    <style name="MoneyWindow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <!-- <item name="android:gravity">center|center_horizontal</item> -->
+        <item name="android:text">@string/hint_000</item>
+    </style>
+
+    <style name="currency">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginTop">8dip</item>
+    </style>
+
+    <style name="MoneySeparator">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">25dip</item>
+        <item name="android:background">@color/summary_background</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="plus">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">+</item>
+        <item name="android:textColor">@color/caption</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">4dip</item>
+    </style>
+
+    <style name="minus">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">-</item>
+        <item name="android:textColor">@color/caption</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">4dip</item>
+    </style>
+
+    <style name="equal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">=</item>
+        <item name="android:textColor">@color/caption</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">4dip</item>
+    </style>
+
+    <style name="amount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/amount</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="name">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/name</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/title</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">5dip</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="day">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/day</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">8dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+    <style name="SbyTitle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SbyInput">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+</resources>

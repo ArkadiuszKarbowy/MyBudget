@@ -1,0 +1,16 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.mybudget.SummaryByYear$PlaceholderFragment" >
+
+    <ListView
+        android:id="@+id/sby_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/deepBackground"
+        android:dividerHeight="1dp"
+        android:layout_margin="2dp" >
+    </ListView>
+    
+</RelativeLayout>

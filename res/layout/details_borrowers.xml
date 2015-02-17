@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/details_borrowers"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/infoHeaderBL"
+        layout="@layout/info_header_bl" >
+    </include>
+
+    <ListView
+        android:id="@+id/borrowers_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoHeaderBL"
+        android:layout_marginTop="5dp" >
+    </ListView>
+</RelativeLayout>

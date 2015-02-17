@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyBudget</string>
+    <string name="title_activity_history">History</string>
+    <string name="title_activity_action">Action</string>
+    <string name="title_activity_actions">Actions</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_basic">Basic status</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_export">Export data</string>
+    <string name="summary_by_year">Summary</string>
+    <string name="sample_number">230.3</string>
+    <string name="sample_txt">sample</string>
+
+    <!-- Main -->
+    <string name="summary">Summary</string>
+    <string name="total">total</string>
+    <string name="net">Net</string>
+    <string name="savings">Savings</string>
+    <string name="borrowed">Borrowed</string>
+    <string name="lend">Lend</string>
+    <string name="no_entries">No entries</string>
+    <string name="cotojest">co toNo entries</string>
+
+    <!-- Akcje -->
+    <string name="outcome">Outcome</string>
+    <string name="income">Income</string>
+    <string name="outcomes">Outcomes</string>
+    <string name="incomes">Incomes</string>
+    <string name="latest_actions"> Latest entries</string>
+    <string name="done">Done</string>
+    <string name="discard">Discard</string>
+    <string name="date_picker">Date</string>
+    <string name="title">Title</string>
+    <string name="amount">Amount</string>
+    <string name="name_surname">Name and Surname</string>
+    <string name="note">Note</string>
+    <string name="category">Category</string>
+
+    <!-- Stan bieżacy -->
+    <string name="currency">Currency</string>
+    <string name="lenders">Lenders</string>
+    <string name="borrowers">Borrowers</string>
+    <string name="hint_000">0</string>
+    <string name="account">Account</string>
+    <string name="cash">Cash</string>
+    <string name="wallet">Wallet</string>
+    <string name="interest">Rate of interest</string>
+    <string name="account_cash_wallet">Account, cash, wallet</string>
+    <string name="cash_rate">Cash, rate of interest</string>
+
+    <!-- Details -->
+    <string name="in">In</string>
+    <string name="out">Out</string>
+    <string name="saved">Saved</string>
+    <string name="loan">Loan</string>
+    <string name="day">Day</string>
+    <string name="name">Name</string>
+    <string name="avg">Averge</string>
+
+    <string-array name="currency_array">
+        <item>PLN</item>
+        <item>EUR</item>
+        <item>GBD</item>
+        <item>USD</item>
+    </string-array>
+    <string-array name="actions">
+        <item>Incomes</item>
+        <item>Outcomes</item>
+        <item>Borrowed from</item>
+        <item>Lend to</item>
+    </string-array>
+</resources>

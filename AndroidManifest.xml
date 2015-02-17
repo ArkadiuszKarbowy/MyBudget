@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mybudget"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_mobile"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="com.mybudget.main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mybudget.history.History"
+            android:label="@string/title_activity_history"
+            android:parentActivityName="com.mybudget.main.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.mybudget.actions.Actions"
+            android:label="@string/title_activity_actions"
+            android:parentActivityName="com.mybudget.main.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.mybudget.basicStatus.BasicValues"
+            android:label="@string/title_activity_basic"
+            android:parentActivityName="com.mybudget.main.MainActivity" >
+        </activity>
+        <activity
+            android:name="com.mybudget.history.Details"
+            android:label="@string/title_activity_details"
+            android:parentActivityName="com.mybudget.history.History" >
+        </activity>
+        <activity
+            android:name="com.mybudget.history.SummaryByYear"
+            android:label="@string/summary_by_year"
+            android:parentActivityName="com.mybudget.history.History" >
+        </activity>
+        <activity
+            android:name="com.mybudget.history.YearStats"
+            android:parentActivityName="com.mybudget.history.SummaryByYear" >
+        </activity>
+    </application>
+
+</manifest>

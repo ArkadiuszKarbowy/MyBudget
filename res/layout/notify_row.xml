@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/gradient_gray"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/on_delete_border"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/notify_active"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/on_not_deleted_border"
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:background="@color/row"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/action"
+        android:layout_width="47dp"
+        android:layout_height="match_parent"
+        android:background="@color/row"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:src="@drawable/ic_dialog_outcome" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:clickable="false" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="@string/name" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/title"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/descript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/note" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/date_picker"
+            android:textSize="8sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="3dp"
+            android:text="@string/sample_number" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>

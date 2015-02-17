@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+  <TextView
+        style="@style/Headline"
+        android:layout_gravity="left"
+        android:text="Outcomes by category"
+        android:textSize="12sp" />
+  <TextView 
+      style="@style/Underline"/>
+    
+    <ListView
+        android:id="@+id/sby_outcomes_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       	android:clickable="false"
+       	android:focusable="false"
+       	android:focusableInTouchMode="false"
+       	android:divider="@color/white"
+        android:dividerHeight="0dp"
+        android:layout_margin="4dp" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="itemLeftBorderColor"> #2968e6</color>
+    
+    <color name="black">#000000</color> 
+    <color name="light_headline">#999999</color> 
+    <color name="gray">#e0dfdc</color> 
+    <color name="green">#22e853</color> 
+    <color name="red">#ff0000</color> 
+    <color name="itemBackground">#afb9fc</color>
+    <color name="deepBackground">#bfbebc</color>
+    <color name="header">#bd2a1a</color>
+    <color name="history_list_left_border">#bd2a1a</color>
+    <color name="category_list_left_border">#2277ff</color>
+    <color name="category">#2277ff</color>
+    <color name="white">#ffffff</color> 
+    <color name="row">#faf9f7</color>
+    <color name="summary_background">#f0f0f0</color>
+    <color name="caption">#b8b7b5</color>
+    <color name="notify_active">#bd2a1a</color>
+    
+    
+</resources>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- NAME AND SURNAME -->
+
+        <TextView
+            android:id="@+id/l_name_surname_headline"
+            style="@style/Headline"
+            android:text="@string/name_surname" />
+
+        <View
+            android:id="@+id/l_name_surname_underline"
+            style="@style/Underline"
+            android:layout_below="@+id/l_name_surname_headline" />
+
+        <EditText
+            android:id="@+id/lend_name_surname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/l_name_surname_underline"
+            android:layout_marginTop="5dip"
+            android:inputType="textCapWords"
+            android:hint="@string/name_surname" />
+
+        <!-- NOTE -->
+
+        <TextView
+            android:id="@+id/l_note_headline"
+            style="@style/Headline"
+            android:layout_below="@+id/lend_name_surname"
+            android:text="@string/note" />
+
+        <View
+            android:id="@+id/l_note_underline"
+            style="@style/Underline"
+            android:layout_below="@+id/l_note_headline" />
+
+        <EditText
+            android:id="@+id/lend_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/l_note_underline"
+            android:layout_marginTop="5dip"
+            android:inputType="textCapSentences"
+            android:hint="@string/note" />
+
+        <!-- AMOUNT -->
+
+        <TextView
+            android:id="@+id/l_amount_headline"
+            style="@style/Headline"
+            android:layout_below="@+id/lend_note"
+            android:text="@string/amount" />
+
+        <View
+            android:id="@+id/l_amount_underline"
+            style="@style/Underline"
+            android:layout_below="@+id/l_amount_headline" />
+
+        <EditText
+            android:id="@+id/lend_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/l_amount_underline"
+            android:layout_marginTop="5dip"
+            android:inputType="numberDecimal|numberSigned"
+            android:hint="@string/amount" />
+    </RelativeLayout>
+
+</ScrollView>

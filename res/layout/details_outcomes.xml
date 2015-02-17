@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/details_outcomes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+     <include
+        android:id="@+id/infoHeaderIO"
+        layout="@layout/info_header_io" >
+    </include>
+
+    <ExpandableListView
+        android:id="@+id/outcomes_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/infoHeaderIO"
+        android:layout_marginTop="5dp"
+        android:dividerHeight="4dp" >
+    </ExpandableListView>
+
+</RelativeLayout>
